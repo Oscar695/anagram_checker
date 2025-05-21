@@ -32,7 +32,7 @@ describe("anagram checker logic", () => {
         const answer = anagramChecker("stop", "potss") 
         expect(answer).toBe(expectedResult)
     })
-    it("asdf and asdfs returns false", () => {
+    it("return false for different length", () => {
         const expectedResult = false
         const answer = anagramChecker("asdf", "asdfs") 
         expect(answer).toBe(expectedResult)
